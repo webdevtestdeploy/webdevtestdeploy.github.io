@@ -1,37 +1,10 @@
+---
+---
 <!DOCTYPE html>
----
----
+
 <html lang="en">
-<head>
-  <meta charset="utf-8">
- 
-
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- Slick -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-
-  <!-- Fontawesome -->
-  <link rel="stylesheet" href="plugins/font-awesome/fontawesome.min.css">
-  <link rel="stylesheet" href="plugins/font-awesome/brands.css">
-  <link rel="stylesheet" href="plugins/font-awesome/solid.css">
-
-  <!-- aos -->
-  <link rel="stylesheet" href="plugins/aos/aos.css">
-
-  <!-- Main Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <!--Favicon-->
-  <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
-
-  <link rel="shortcut icon" href="images/icon_wct.png" type="image/x-icon">
-
-
-</head>
+{% include "head.liquid" %}
+<title>Portfolio Operation & Services</title>
 
 <body>
 
@@ -43,65 +16,7 @@
     </div>
   </div>
   <!--================== Header Section Start ==================-->
-  <header class="navigation border-bottom">
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/NewLogo2.png" alt="img">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link @@about" href="whoami.html">About Me</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link @@portfolio" href="portfolio.html">Portfolio</a>
-          </li> -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle @@portfolio @@portfolio-single" href="#" id="navbarDropdown"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Portfolio/Showcases
-              <!-- Hier stelle ich meine Beispiele zur Verfügung. Vorwiegend in Form von PowerPoint shows bzw. Movies.  mit dem template Portfolio.html. Portfolio Single verwende ich im Bereich
-                Providing Services. Für das Blog template habe ich derzeit noch keine Verwendung. Denn auch wenn ich eine Art Blog erstelle, dann möchte ich lieber das portfolio template nehmen. Eventuell
-              in combination mit Blog Single template. aber fuer den blog eignet sich auch ganz gut das portfolio single template, da ich hier bilder links und rechts verwenden kann. -->
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item @@portfolio" href="portfolio-BA-Studies.html">Business Analysis</a></li>
-              <li><a class="dropdown-item @@portfolio" href="portfolio-SystemIntegration.html">System Integration</a></li>
-              <li><a class="dropdown-item @@portfolio" href="portfolio-ProductMgmt.html">Product Management</a></li>
-              <li><a class="dropdown-item @@portfolio" href="portfolio-ProjectMgmt.html">Project Management</a></li>
-              <li><a class="dropdown-item @@portfolio" href="portfolio-WebDev.html">Web Development</a></li>
-              <li><a class="dropdown-item @@portfolio" href="portfolio-InfraMgmt.html">Infrastructure Management</a></li>
-              <li><a class="dropdown-item @@portfolio" href="portfolio-OpsServices.html">Operation & Services</a></li>
-              <li><a class="dropdown-item @@portfolio" href="portfolio-Ops&Tools.html">Operation & Tools</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle @@blog @@blog-single" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Blog
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item @@blog" href="blog.html">blog </a></li>
-              <li><a class="dropdown-item @@blog-single" href="blog-single.html">blog single</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link @@contact" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
+  {% include "header.liquid" %}
   <!--================== Header Section End ==================-->
 
   <!--================== Project Section Start ==================-->
@@ -242,41 +157,7 @@
     <i class="fas fa-angle-up"></i>
   </div>
   <!--================== Footer Section Start ==================-->
-  <footer>
-    <div class="footer-top section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mx-auto text-center">
-            <h2 class="text-primary h4 fw-bold mb-md-5 mb-3">Ready To Rock The World?</h2>
-            <p class="mb-2">Contact Me</p>
-            <a href="#" class="mb-3 h6 text-tertiary d-block">uschi@wct-consulting.services</a>
-            <a class="mb-lg-4 mb-3 d-inline-block text-dark" href="#">+880 (308) 555-0121</a>
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Whatsapp</a></li>
-              <li class="list-inline-item"><a href="#">Facebook</a></li>
-              <li class="list-inline-item"><a href="#">Instagram</a></li>
-            </ul>
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Sweden</a></li>
-              <li class="list-inline-item"><a href="#">Austria</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom text-center py-md-5 py-4 mb-0 border-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p class="mb-0">Content & Design by <a rel="nofollow" href="https://wctconsulting.github.io"
-                target="blank">Work Clever Together Europe AB
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  {% include "footer.liquid" %}
   <!--================== Footer Section End ==================-->
   <!-- jQuery -->
   <script src="plugins/jquery/jquery.min.js"></script>
