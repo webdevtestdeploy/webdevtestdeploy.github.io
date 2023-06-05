@@ -1,0 +1,12 @@
+{
+  "name": "WCT Consulting",
+  "scripts": {
+    "build": "npx rimraf destination && npx @11ty/eleventy",
+    "develop": "npx rimraf destination && npx @11ty/eleventy --serve"
+  },
+  "author": "Ursula Choroba",
+  "devDependencies": {
+    "@11ty/eleventy": "2.0.1",
+    "rimraf": "5.0.1"
+  }
+}
