@@ -1,0 +1,33 @@
+name: Architecture Decision
+description: Propose or record a decision about site architecture, stack, or setup
+title: "[Decision] "
+labels: ["decision"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What problem are we solving? What's forcing this decision now?
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options considered
+      description: What are we choosing between?
+    validations:
+      required: false
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision
+      description: What did we decide (fill in once settled)?
+    validations:
+      required: false
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences
+      description: What does this make easier or harder going forward?
+    validations:
+      required: false
