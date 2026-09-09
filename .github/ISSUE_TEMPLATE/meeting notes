@@ -1,0 +1,25 @@
+name: Meeting Notes
+description: Log notes and action items from a team meeting
+title: "[Meeting] "
+labels: ["meeting-notes"]
+body:
+  - type: input
+    id: attendees
+    attributes:
+      label: Attendees
+    validations:
+      required: false
+  - type: textarea
+    id: discussed
+    attributes:
+      label: Discussed
+      description: What was covered? Link related Issues where relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: actions
+    attributes:
+      label: Action items
+      description: "Who owns what, by when — e.g. @username: task (due date)"
+    validations:
+      required: false
